@@ -344,8 +344,8 @@ a:hover, a:active {
 
         keyCountLabel.innerText = `Number of keys: ${keyCount}`;
 
-        progressBar.style.width = '2%';
-        progressText.innerText = '2%';
+        progressBar.style.width = '5%';
+        progressText.innerText = '5%';
         progressLog.innerText = 'Starting...';
         progressContainer.classList.remove('hidden');
         keyContainer.classList.add('hidden');
@@ -379,7 +379,7 @@ a:hover, a:active {
             for (let i = 0; i < 11; i++) {
                 await sleep(EVENTS_DELAY * delayRandom());
                 const hasCode = await emulateProgress(clientToken, game.promoId);
-                updateProgress(7 / keyCount, 'Emulating progress...');
+                updateProgress(15 / keyCount, 'Emulating progress...');
                 if (hasCode) {
                     break;
                 }
